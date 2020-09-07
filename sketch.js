@@ -16,15 +16,6 @@ function setup() {
 
 function draw() {
   background("black");
-  /*if(gameState==="PLAY"){
-    text("Press Space to Start",100,100);
-  }
-  if(keyDown("space")){
-    ball.velocityY=5;
-    ball.velocityX=5;
-    gameState="END"
-  }
-  */
   ball.velocityY=5;
   ball.velocityX=5;
   ball.bounceOff(paddle);
