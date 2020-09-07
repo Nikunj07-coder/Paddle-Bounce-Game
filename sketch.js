@@ -11,13 +11,13 @@ function setup() {
   edge3.shapeColor="black";
   ball=createSprite(400,200,15,15);
   ball.shapeColor="white";
+  ball.velocityY=5;
+  ball.velocityX=5;
   gameState="PLAY"
 }
 
 function draw() {
   background("black");
-  ball.velocityY=5;
-  ball.velocityX=5;
   ball.bounceOff(paddle);
   ball.bounceOff(edge1);
   ball.bounceOff(edge2);
